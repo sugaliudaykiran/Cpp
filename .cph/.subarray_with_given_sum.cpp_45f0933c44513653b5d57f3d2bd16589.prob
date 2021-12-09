@@ -1,0 +1,1 @@
+{"name":"Local: subarray_with_given_sum","url":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\subarray_with_given_sum.cpp","tests":[{"id":1638285411094,"input":"5 12\n1 2 3 7 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\subarray_with_given_sum.cpp","group":"local","local":true}

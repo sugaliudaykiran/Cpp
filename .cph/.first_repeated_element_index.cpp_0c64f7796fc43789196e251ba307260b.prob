@@ -1,0 +1,1 @@
+{"name":"Local: first_repeated_element_index","url":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\first_repeated_element_index.cpp","tests":[{"id":1638201856840,"input":"7\n1 5 3 4 3 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\first_repeated_element_index.cpp","group":"local","local":true}
