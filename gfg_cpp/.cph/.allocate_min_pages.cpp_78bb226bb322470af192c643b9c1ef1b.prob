@@ -1,0 +1,1 @@
+{"name":"Local: allocate_min_pages","url":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\gfg_cpp\\allocate_min_pages.cpp","tests":[{"id":1640178477286,"input":"4  2\n10 20 10 30","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\gfg_cpp\\allocate_min_pages.cpp","group":"local","local":true}

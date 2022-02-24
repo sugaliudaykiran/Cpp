@@ -1,0 +1,1 @@
+{"name":"Local: naive_partition","url":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\gfg_cpp\\naive_partition.cpp","tests":[{"id":1640447132321,"input":"5  4\n5 3 12 8 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\UDAYK\\OneDrive\\Desktop\\Lets_go\\gfg_cpp\\naive_partition.cpp","group":"local","local":true}
