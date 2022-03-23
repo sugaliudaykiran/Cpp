@@ -13,6 +13,12 @@ Print Nodes at K distance   :-
            40   50    70        -> k = 2
 
     O/P ->   40  50  70
+
+    ** In this we check from the root if is it NULL then return else..
+    ** check the left subtree and decrement the K value..
+    ** after the left, check right subtree and decrement the K value..
+    ** If K is reaches 0 then print the key value..
+    
 */
 
 #include<bits/stdc++.h>
