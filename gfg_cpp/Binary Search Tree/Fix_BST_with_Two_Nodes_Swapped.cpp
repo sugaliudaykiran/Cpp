@@ -63,7 +63,7 @@ struct Node{
         right = left = NULL;
     }
 };
-    //      Inorder Traversal   :-
+    //      Inorder Traversal   :-      
 void inorder(Node *root){
     if (root == NULL)   return;
     if (root != NULL){
@@ -73,6 +73,7 @@ void inorder(Node *root){
     }
 }
 
+//              Fix BST         TC -> O(n)..    AS -> O(h)..
 Node *prevs = NULL, *first = NULL, *second = NULL;
 void fixBST(Node *root){
     if (root == NULL){
