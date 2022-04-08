@@ -69,11 +69,11 @@ void vsumr(Node *root, int hd, map <int, int> &mp){
 //  creating wrapper function   :-      TC -> O(n loghd) + O(hd)..  => O(n loghd)..   AS -> O(hd)
 void vsum(Node *root){               // where hd is total no. of possible horizontal distances..
     map <int, int> mp;
-    int hd = 0;                 // horizontal distance for root is Zero..
+    int hd = 0;                 // horizontal distance(hd) for root is Zero..
 
     vsumr(root, hd, mp);
 
-    for (auto sum: mp){
+    for (auto sum: mp){             //  O(hd..)
         cout << sum.second << " ";
     }cout << endl;
 }
