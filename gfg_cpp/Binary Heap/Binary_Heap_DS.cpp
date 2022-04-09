@@ -98,7 +98,7 @@ Binary Heap Insert  :-
                 }
                 size++, ar[size-1] = x;     //  increasing size and inserting on the last node position..
 
-                for (int i = size-1; i != 0 && ar[i] < ar[parent(i)]; i--){
+                for (int i = size-1; i != 0 && ar[i] < ar[parent(i)];){
                     swap(ar[i], ar[parent(i)]);
                     i = parent(i);
                 }
@@ -137,6 +137,55 @@ Binary Heap Insert  :-
                        /   \    /   \
                       20   50  100   25
                     /   \
-                   45   40          
+                   45   40        
+
 */  
+#include<bits/stdc++.h>
+using namespace std;
+class MinHeap{
+    int *ar;
+    int size;
+    int capacity;
+
+    public:
+    MinHeap(int c){
+        size = 0;
+        capacity = c;
+        ar = new int[c];
+    }
+
+    int left(int i){
+        return (2*i +1);
+    }
+    int right(int i){
+        return (2*i +2);
+    }
+    int parent(int i){
+        return (i-1)/2;
+    }
+    
+    void insert(int x){
+        if (size == capacity){
+            return;
+        }
+        size++;
+        ar[size -1] = x;
+        
+        for (int i=size-1; i!=0 and ar[parent(i)] > ar[i];){
+            swap(ar[i], ar[parent(i)]);
+            i = parent(i);
+        }
+    }
+};
+
+int32_t main(){
+  MinHeap h(11);
+  
+  h.insert(3);
+  h.insert(2);
+  h.insert(15);
+  h.insert(20);
+  
+  return 0;
+}
 
