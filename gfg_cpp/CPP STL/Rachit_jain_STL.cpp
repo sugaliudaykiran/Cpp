@@ -10,6 +10,7 @@
 #include<algorithm>
 #include<set>
 #include<map>
+#include<unordered_map>
 using namespace std;
 
 bool myCmp(int x, int y)
@@ -164,10 +165,80 @@ void PowerOfStl()
 }//  Algorithm :- First we find the given point and INT_MAX in which greater to it..
         // and we decrement the iterator and check current pair has the point. or not..
 
+
+void unordered_mapDemo()
+{
+    map <char, int> M;              //  insertion add(Key, value) and erase takes O(Log N)..    It uses 'BST' internally.. because it takes height of tree in worst case so it's balanced.. O(Log N)..
+    unordered_map <char, int> U;    //  insertion add(Key, value) and erase takes O(1)..        It uses Hashing and indexing.. in case of collision O(N), it uses Linear probing method.. and soon.
+
+    string s = "uday kiran";
+    for (char c: s)
+        M[c]++;     //  Takes O(N LogN)..   where N = |S|
+
+    for (char c: s)
+        U[c]++;     //  Takes O(N)..    
+}
 int main()
 {
     //  C++ STL
-    PowerOfStl();
+    int n;
+    cin >> n;
+    long long S = 0;
+
+    vector <int> v(n+5, 0);   // D. Array Division              // avoiding some segmentation fault..
+    for (int i=0; i<n; i++)
+        cin >> v[i], S += v[i];     //  Find the Sum..
+                                             // |
+    //  Given ->  [2, 2, 3, 4, 5]   => [2, 2, 4,| 3, 5]    now both parts are same sum..
+
+    if (S & 1)
+    {
+        cout << "No\n";     //  Because if S is Odd answer doesn't exists..
+        return 0;
+    }
+
+    map <long long, int> first, second; //      TRY for unordered_map also.. 
+    
+    first[v[0]] = 1;
+    for (int i=1; i<n; i++)
+    {
+        second[v[i]]++;     //  Increment the value count.. incase if value is repeated..
+    }
+    long long sdash = 0;
+
+    for (int i=0; i<n; i++)
+    {
+        sdash += v[i];
+        
+        if (sdash == S/2)       //  In case we are done that we get the left half equal to right half..
+        {
+            cout << "Yes\n";
+            return 0;
+        }
+        if (sdash < S/2)    //  delete element from second half and insert to first half..
+        {
+            long long x = S/2 - sdash;      //  X lies on the second part..
+            if (second[x] > 0)
+            {
+                cout << "Yes\n";
+                return 0;
+            }
+        }
+        if (sdash > S/2)        //  Here we are lookup for the 'Y' and above case 'X'
+        {
+            long long y = sdash - S/2;      //  Y lies on the first part..
+            if (first[y] > 0)
+            {
+                cout << "Yes\n";
+                return 0;
+            }
+        }
+        //  i+1               Here we are adding and removing from the two parts.. 
+        first[v[i+1]]++;
+        second[v[i+1]]--;
+    }
+    cout << "No\n";
+
 
     return 0;
 }
