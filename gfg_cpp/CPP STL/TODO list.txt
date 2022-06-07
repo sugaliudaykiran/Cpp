@@ -1,0 +1,87 @@
+01 
+C++
+Introduction,Basic Input Output,Errors,Operators and much more
+
+02
+Introduction,Variables and Concepts
+First C++ Program,Comments in C++,Data Types in C++,Variables in C++ and much more
+
+03
+Flow Control, Function & Loops
+If Else Syntax in C++,Nested If Else with Example,Functions in C++ and much more
+
+04
+Arrays, String, Pointers & Reference
+Declaring and Initializing Arrays,Array Traversal in C++ and much more
+
+05
+Strucutre and Union
+Struct vs Class in C++,Union in C++,Complex Number Addition Using Structure and much more
+
+06
+C++ OOPS
+Object Oriented Programming,This Pointer,Virtual Functions and much more
+
+07
+Advanced
+Exception Handling in C++,Try Throw and Catch in C++,Function Pointers and much more
+
+08
+STL Overview
+Iterators in C++,Templates in C++,Function Templates in C++ STL and much more
+
+09
+Pairs
+Pair in C++ STL,Sort an array according to another array and much more
+
+10
+Vectors
+Vector in C++,Vectors Introduction,Sample Problem: Vector and much more
+
+11
+forward_list and List
+Forward List in C++ STL,List in C++ STL and much more
+
+12
+Dequeue
+Deque in C++ STL, Sliding Window Maximum and much more
+
+13
+Stack
+Stack in C++ STL,Reverse Items using Stack,Balanced Parenthesis and much more
+
+14
+Queue
+Queue in C++ STL,Generate numbers using given digits,Reverse first K items in a Queue and much more
+
+15
+Priority Queue
+Priority Queue in C++,K largest elements in an array,Find K most frequent elements and much more
+
+16
+Set & Multiset
+Set in C++ STL,Ceiling on right,Multiset in C++ STL and much more
+
+17
+Map & Multimap
+Map in C++ STL,Multimap in C++ STL,Design a DS for Prices with Duplicates allowed and much more
+
+18
+Unordered Set
+Print Distinct Elements of Array,Intersection of two unsorted Arrays and much more
+
+19
+Unordered Map
+Unordered Map in Cpp STL,Design a DS for storing user balance and much more
+
+20
+Non Mutating STL Algorithms
+Find in Cpp STL,Lower Bound/Upper Bound in C++STL,is_permutation() in C++ STL and much more
+
+21
+Mutating STL Algorithms
+sort(): The thief problem,make_heap() in C++ STL,merge() in C++ STL and much more
+
+22
+Miscellaneous
+Strings in C++,Pattern Searching and Returning floating point of number and much more
