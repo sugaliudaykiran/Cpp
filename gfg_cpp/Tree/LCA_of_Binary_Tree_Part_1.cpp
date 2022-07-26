@@ -24,7 +24,7 @@
         n1 = 70,  n2  = 80
         path_1 = [10, 30, 50, 70]
         path_2 = [10, 30, 50, 80]
-    3) We can see that "30" is LCA..
+    3) We can see that "50" is LCA..
 
     Part (2) :-
             Efficient Solution :-       TC -> 0(n)..  AS -> 0(h)..
