@@ -103,7 +103,7 @@ Node *lca2(Node *root,int n1,int n2){
 
     if (lca_1 != NULL && lca_2 != NULL) return root;
     if (lca_1 != NULL)  return lca_1;   // means lca_2 is NULL..
-    else    return lca_2;   //  lca_2 can be NULL (or) it's pointing to a node..
+    else    return lca_2;   //  lca_1 be NULL (or) it's pointing to a node..
 }
 
 int32_t main(){
