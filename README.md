@@ -1,5 +1,6 @@
 # Cpp
-Lets_go
+
+
 
 If input array is sorted then
     - Binary search
